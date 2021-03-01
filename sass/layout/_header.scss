@@ -1,0 +1,52 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 4.5rem;
+	background-color: $color-gold;
+
+	&__leng {
+		display: flex;
+		justify-content: flex-end;
+
+		a {
+			padding-right: 1rem;
+			font-size: 1.2rem;
+			line-height: 1.4rem;
+			color: $color-white;
+			opacity: 0.5;
+			transition: opacity 0.3s;
+		}
+		a:last-child {
+			padding: 0;
+		}
+
+		a:hover {
+			opacity: 0.8;
+		}
+
+		a.header__active {
+			opacity: 1;
+		}
+	}
+
+	&__phone {
+		font-size: 1.2rem;
+		line-height: 1.4rem;
+		color: $color-white;
+	}
+
+	&__email {
+		a {
+			font-size: 1.2rem;
+			line-height: 1.4rem;
+			color: $color-white;
+			transition: color 0.2s;
+		}
+
+		a:hover {
+			color: $color-primary-dark;
+		}
+	}
+}

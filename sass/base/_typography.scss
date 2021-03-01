@@ -1,0 +1,68 @@
+h1 {
+	font-weight: bold;
+	font-size: 6.4rem;
+	line-height: 7.5rem;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	width: max-content;
+
+	color: $color-white;
+
+	@media only screen and (max-width: 53em) {
+		font-size: 5.8rem;
+	}
+}
+
+h2 {
+	margin-bottom: 3rem;
+	font-weight: bold;
+	font-size: 4rem;
+	line-height: 4.9rem;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	color: $color-white;
+}
+
+h2::before {
+	display: block;
+	content: "";
+	height: 0.6rem;
+	width: 9rem;
+	background-color: $color-gold;
+	margin-bottom: 4rem;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	color: $color-white;
+}
+
+h4 {
+	font-size: 1.8rem;
+	line-height: 2.1rem;
+	letter-spacing: 0.05em;
+	color: #000000;
+}
+
+h5 {
+	font-weight: bold;
+	font-size: 6.4rem;
+	line-height: 7.5rem;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	color: $color-primary-dark;
+}
+
+p {
+	font-size: 1.8rem;
+	line-height: 2.8rem;
+	color: $color-white;
+	text-align: center;
+}

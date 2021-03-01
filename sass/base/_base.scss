@@ -1,0 +1,69 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+html {
+	font-size: 62.5%;
+	
+	@media only screen and (max-width: 78em) {
+		font-size: 52.5%;
+	}
+	
+	@media only screen and (max-width: 64em) {
+		font-size: 47.5%;
+	}
+}
+
+body {
+	background-color: $color-primary-dark;
+	max-width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	font-family: Roboto;
+}
+img {
+	width: 100%;
+}
+
+.container {
+	padding: 0 22%;
+
+	@media only screen and (max-width: 112.5em) {
+		padding: 0 18%;
+	}
+	@media only screen and (max-width: 100em) {
+		padding: 0 14%;
+	}
+	@media only screen and (max-width: 87.5em) {
+		padding: 0 10%;
+	}
+	@media only screen and (max-width: 78em) {
+		padding: 0 6%;
+	}
+	@media only screen and (max-width: 70em) {
+		padding: 0 3%;
+	}
+}
+
+::selection {
+	background-color: $color-primary-dark;
+	color: $color-white;
+}

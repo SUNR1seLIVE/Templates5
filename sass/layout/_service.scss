@@ -1,0 +1,76 @@
+.service {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	height: 56.1rem;
+
+	&__reg {
+		flex: 0 0 39.32%;
+		height: 100%;
+		background-color: $color-light-dark;
+	}
+
+	&__content {
+		position: absolute;
+		z-index: 3;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&-desc {
+			p {
+				margin-top: 3rem;
+				text-align: start;
+			}
+
+			.btn {
+				margin-top: 5rem;
+				@include d-flex-center;
+				width: 22rem;
+				height: 5.5rem;
+
+				font-weight: 500;
+				font-size: 1.6rem;
+				line-height: 2.5rem;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				color: $color-white;
+
+				background-color: $color-gold;
+			}
+		}
+
+		&-img {
+			margin-right: -8rem;
+		}
+
+		&-nav {
+			width: 15.5%;
+			height: 31rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			a {
+				display: flex;
+				justify-content: space-between;
+				p {
+					font-weight: 500;
+					font-size: 1.6rem;
+					line-height: 2.5rem;
+					letter-spacing: 0.1em;
+					text-transform: uppercase;
+					color: $color-gold;
+				}
+
+				img {
+					width: 6.5rem;
+				}
+			}
+		}
+	}
+}

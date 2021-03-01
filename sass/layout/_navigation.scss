@@ -1,0 +1,64 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 10rem;
+
+	&__frame {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		width: max-content;
+
+		&-logo {
+			padding-right: 3rem;
+			height: 4.6rem;
+			@include d-flex-center;
+			img {
+				height: 100%;
+			}
+		}
+
+		&-line {
+			padding-right: 3rem;
+			height: 4.6rem;
+			border-left: 1px solid #f2f2f2;
+		}
+
+		&-placeholder {
+			padding-right: 1.3rem;
+			height: 2.5rem;
+		}
+
+		&-office {
+			height: 1.6rem;
+			font-size: 1.4rem;
+			line-height: 1.6rem;
+			letter-spacing: 0.05em;
+			color: $color-white;
+		}
+	}
+
+	&__mainmenu {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		flex: 0 0 50%;
+
+		&-link {
+			padding-right: 3rem;
+			font-size: 1.4rem;
+			line-height: 1.6rem;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: $color-white;
+		}
+		&-link:last-child {
+			padding: 0;
+		}
+		&-link:nth-child(2) {
+			width: max-content;
+		}
+	}
+}
